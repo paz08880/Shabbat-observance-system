@@ -1,6 +1,6 @@
 //Two ways to build a shabbat observance system
 
-//Number One
+//Number one
 
 window.addEventListener('load', () => {
   const test = document.getElementById("test");
