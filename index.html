@@ -10,35 +10,7 @@
 			<h1> מערכת שמירת שבת </h1>
 				<div id = "test" class = "test"></div>
 		</div>
+
+		<script src="app.js"></script>
 </body>
-<script>
-	window.addEventListener('load', () => {	
-	const test = document.getElementById("test");
-	var d = new Date();
-	var dayFriday = 5; //אמור להיות 5
-	var daySaturday = 6; //אמור להיות 6
-	var hours = d.getHours();
-	console.log(d.getDay());
-
-			//שישי
-		if(d.getDay() === dayFriday){
-			if(hours >= 16){ // ניכנס שבת
-				console.log("this website close");
-				test.innerHTML = "this website close";
-				}else{
-
-				}
-		}
-		
-			//שבת
-		if(d.getDay() === daySaturday){
-			if(hours <= 17){ //יציאת שבת
-				test.innerHTML = "this website close";
-				}else{
-
-				}
-		}
-	});
-
-</script>
 </html>
