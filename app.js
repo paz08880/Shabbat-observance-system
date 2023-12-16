@@ -1,7 +1,7 @@
 //Two ways to build a shabbat observance system
 
 //Number one
-
+/*
 window.addEventListener('load', () => {
   const test = document.getElementById("test");
   const api_url = "https://www.hebcal.com/shabbat/?cfg=json&lg=h&geonameid=293397";
@@ -9,7 +9,7 @@ window.addEventListener('load', () => {
   async function getapi(url) {
     const response = await fetch(url);
     var data = await response.json();
-    calculate(data.items[1].date, data.items[3].date);
+    calculate(data.items[0].date, data.items[2].date);
   }
 
 
@@ -36,7 +36,7 @@ function webStatus(status){
 getapi(api_url);
 
 //Way Two
-/*
+*/
 	var d = new Date();
 	var dayFriday = 5; 
 	var daySaturday = 6;
@@ -59,6 +59,6 @@ getapi(api_url);
 
 			}
 		}
-*/
-});
+
+  //});
 
